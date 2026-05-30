@@ -17,9 +17,27 @@ export default function HomePage() {
         {/* gold accent line */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-dos-gold to-transparent" />
 
-        {/* CHANGED HERE: Added "flex flex-col-reverse" to put image first on mobile */}
-        <div className="max-w-7xl mx-auto px-5 lg:px-10 py-20 lg:py-32 flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        {/* CHANGED HERE: Removed "reverse", now Image comes first in the code so it's on the left/desktop and top/mobile */}
+        <div className="max-w-7xl mx-auto px-5 lg:px-10 py-20 lg:py-32 flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
+          {/* HERO IMAGE - MOVED TO THE TOP */}
+          <div className="relative">
+            <div className="relative aspect-[4/5] overflow-hidden">
+              {/* gold frame */}
+              <div className="absolute inset-0 border border-dos-gold/40 z-10 pointer-events-none" />
+              <div className="absolute -bottom-3 -right-3 w-full h-full border border-dos-gold/20 z-0" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/uploads/dos-logo.jpg"
+                alt="DOS Luxury"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="mt-4 text-[11px] tracking-[0.3em] uppercase text-dos-gold/80 text-center">
+            </p>
+          </div>
+
+          {/* HERO TEXT - MOVED TO THE BOTTOM */}
           <div className="relative z-10">
             <p className="text-[11px] tracking-[0.4em] uppercase text-dos-gold mb-6">
               New Drop · Summer 2026
@@ -61,23 +79,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Hero image */}
-          <div className="relative">
-            <div className="relative aspect-[4/5] overflow-hidden">
-              {/* gold frame */}
-              <div className="absolute inset-0 border border-dos-gold/40 z-10 pointer-events-none" />
-              <div className="absolute -bottom-3 -right-3 w-full h-full border border-dos-gold/20 z-0" />
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/uploads/dos-logo.jpg"
-                alt=""
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <p className="mt-4 text-[11px] tracking-[0.3em] uppercase text-dos-gold/80 text-center">
-              
-            </p>
-          </div>
         </div>
       </section>
 
