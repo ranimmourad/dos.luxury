@@ -17,7 +17,9 @@ export default function HomePage() {
         {/* gold accent line */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-dos-gold to-transparent" />
 
-        <div className="max-w-7xl mx-auto px-5 lg:px-10 py-20 lg:py-32 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        {/* CHANGED HERE: Added "flex flex-col-reverse" to put image first on mobile */}
+        <div className="max-w-7xl mx-auto px-5 lg:px-10 py-20 lg:py-32 flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
           <div className="relative z-10">
             <p className="text-[11px] tracking-[0.4em] uppercase text-dos-gold mb-6">
               New Drop · Summer 2026
@@ -136,6 +138,7 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
       {/* ========== ABOUT DOS ========== */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-5xl mx-auto px-5 lg:px-10 text-center">
