@@ -11,7 +11,7 @@ Premium e-commerce website for the Tunisian streetwear brand **D.O.S** (Dammak O
 ## URLs / Routes
 | Route | Purpose |
 |-------|---------|
-| `/` | Home — hero, collections, featured, bestsellers, promos, about, social |
+| `/` | Home — hero, collections, bestsellers, promos, about, social |
 | `/shop` | Shop grid with search, filters (size · color · category · collection · promo) and sorting |
 | `/shop?collection=…` | Filter by collection |
 | `/shop?promo=1` | On-sale products only |
